@@ -64,12 +64,12 @@ namespace PasswordManagerMx
             List<Account> test = parseEncryptedPWFile(encryptedpwFile);
 
             //Creating a new Account
-            string name = "PornAccoutn";
-            string email = "googleemail@gmail.com";
-            string username = "Bigdick69";
-            string pw = "pornPW";
+            string name = "Some_Account";
+            string email = "some_email@gmail.com";
+            string username = "some_username";
+            string pw = "some_password";
             List<string> etcInfo = new List<string>();
-            etcInfo.Add("porn etcInfo item #1");
+            etcInfo.Add("some etcInfo item #1");
             Account pornAccount = new Account(name, email, username, pw, etcInfo);
 
             //Adding a new account to the encryptedpwFile
@@ -84,7 +84,7 @@ namespace PasswordManagerMx
             //In this case editing the information for the account on index 2
             int tempIndex = 2;
             Account tempAcc = test2[2];
-            List<string> tempetcInfo = new List<string>() { "Vivienne", "mothers maiden name", "first Car" };
+            List<string> tempetcInfo = new List<string>() { "Pets name", "mothers maiden name", "first Car" };
             string tempPW = "MS_PW_#2";
             tempAcc.EtcInfo = tempetcInfo;
             tempAcc.Password = tempPW;
