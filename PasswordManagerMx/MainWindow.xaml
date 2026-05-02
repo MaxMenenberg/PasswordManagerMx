@@ -1,0 +1,32 @@
+﻿<Window x:Class="PasswordManagerMx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManagerMx"
+        mc:Ignorable="d"
+        Title="Password Manager Mx" Height="351.5" Width="700.5">
+    <Grid x:Name="MainWindow1" Background="#FFB4B4B4">
+        <ComboBox x:Name="pwDropdown" HorizontalAlignment="Left" Margin="23,59,0,0" VerticalAlignment="Top" Width="251"/>
+        <TextBox x:Name="console" HorizontalAlignment="Left" Height="185" Margin="23,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="645"/>
+        <Button x:Name="CreateAccountButton" Content="Add Account" HorizontalAlignment="Left" Height="33" Margin="448,48,0,0" VerticalAlignment="Top" Width="100" Background="#FF3AACFB" Click="CreateAccountButton_Click"/>
+        <Button x:Name="getAccountInfoBut" Content="Get Info" HorizontalAlignment="Left" Height="33" Margin="330,48,0,0" VerticalAlignment="Top" Width="100" Background="#FF1FD66A" Click="getAccountInfoBut_Click"/>
+        <Label Content="Account List" HorizontalAlignment="Left" Margin="22,38,0,0" VerticalAlignment="Top" FontFamily="Cambria" Height="24" FontSize="14"/>
+        <Menu HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="692">
+            <MenuItem Header="File">
+                <MenuItem x:Name="importPWFile" Header="Import account info" Click="importPWFile_Click"/>
+                <MenuItem x:Name="exporttPWFile" Header="Export account info" Click="exportPWFile_Click"/>
+                <MenuItem Header="Background color">
+                    <MenuItem x:Name="grayColorChange" Header="Gray" Click="grayColorChange_Click"/>
+                    <MenuItem x:Name="blueColorChange" Header="Blue" Click="blueColorChange_Click"/>
+                    <MenuItem x:Name="greenColorChange" Cursor="" Header="Green" Click="greenColorChange_Click"/>
+                    <MenuItem x:Name="redColorChange" Header="Red" Click="redColorChange_Click"/>
+                    <MenuItem x:Name="yellowColorChange" Header="Yellow" Click="yellowColorChange_Click"/>
+                    <MenuItem x:Name="orangeColorChange" Cursor="" Header="Orange" Click="orangeColorChange_Click"/>
+                    <MenuItem x:Name="purpleColorChange" Header="Purple" Click="purpleColorChange_Click"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="EditAccountButton" Content="Edit Account" HorizontalAlignment="Left" Height="33" Margin="568,48,0,0" VerticalAlignment="Top" Width="100" Background="#FFFF4848" Click="EditAccountButton_Click"/>
+    </Grid>
+</Window>
